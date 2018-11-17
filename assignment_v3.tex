@@ -1,14 +1,21 @@
-\documentclass[review]{elsarticle} %CAMBIAR PARA REVISTA!!! (review, 2columns,...)
+\documentclass[review]{elsarticle} %Cambiar para cada revista (review, 2columns,...)
 
 %%%%%%%%%%%% HEADERS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %-- Packages
 \usepackage{lineno,hyperref}
+\usepackage{graphicx,import}
+\usepackage{xcolor}
+%\graphicspath{{Figures/Chap-3/}} %Esto seria para establecer ruta (ftp://ctan.tug.org/tex-archive/info/svg-inkscape/InkscapePDFLaTeX.pdf)
+
+% Smartdiagrams
+\usepackage{smartdiagram, metalogo, newfloat, caption} % Para Smartdiagrams
+\DeclareFloatingEnvironment[fileext=diag,placement={!ht},name=Diagram]{diag}
 
 %-- Options
 \modulolinenumbers[5]
 \date{\today}
 \journal{Applied Energy}
-\bibliographystyle{elsarticle-num} %CAMBIAR!!!
+\bibliographystyle{elsarticle-num}
 %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -17,13 +24,13 @@
 \title{Paper about energy as a Writing Assignment}
 
 %-- Authors
-\author[label1,label2]{Miguel A. Cuesta-Ruiz}\corref{cor1}
+\author[label1]{Miguel A. Cuesta-Ruiz}\corref{cor1}
 \cortext[cor1]{Corresponding author}
 \ead{mcuesta@opendeusto.es}
-\author[label1]{Pepito P\'erez}\corref{cor1}
+\author[label1, label2]{Pepito P\'erez}\corref{cor1}
 \ead{pepitoperez@opendeusto.es}
-\address[label1]{DeustoTech - Fundaci\'on Deusto, Avda Universidades, 24, 48007, Bilbao. }
-\address[label2]{Facultad Ingenier\'\i{}a, Universidad de Deusto, Avda. Universidades, 24, 48007, Bilbao.}
+\address[label1]{Facultad Ingenier\'\i{}a, Universidad de Deusto, Avda. Universidades, 24, 48007, Bilbao.}
+\address[label2]{DeustoTech - Fundaci\'on Deusto, Avda Universidades, 24, 48007, Bilbao. }
 
 %-- Abstract
 \input{Chapters/abstract.tex} % Abstract %%
@@ -35,8 +42,8 @@ Renewable Energy \sep Energy \sep Academic Writing Assignment
 
 \end{frontmatter}
 
-%\linenumbers %Miguel: opcional
-%\tableofcontents %Miguel: opcional
+%\linenumbers %opcional
+%\tableofcontents %opcional
 
 %-- Chapters
 \input{Chapters/chap1.tex} %introduction

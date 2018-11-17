@@ -1,8 +1,4 @@
 1) ¿Cómo cito a [2] dentro del texto, que tiene un montón de autores?
 --- "B.  Bhandari,  K.-T.  Lee,  G.-Y.  Lee,  Y.-M.  Cho,  S.-H.  Ahn,"?
 
-2) No soy capaz de meter el fichero 'pie-chart-text' dentro de 'Figures/Chap3' y seguir las instrucciones de:
---- ftp://ctan.tug.org/tex-archive/info/svg-inkscape/InkscapePDFLaTeX.pdf
---- https://ondahostil.wordpress.com/2018/02/14/lo-que-he-aprendido-graficos-con-inkscape-y-latex/
-
-3) ¿Hay alguna manera de etiquetar en 'smartdiagrams', para luego referenciarlos en el texto?
+2) ¿Hay alguna manera de etiquetar en 'smartdiagrams', para luego referenciarlos en el texto?
